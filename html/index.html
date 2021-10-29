@@ -1,139 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>画皮卡丘</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .demo2 {
+            overflow: auto;
+            height: 50vh;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .demo2::-webkit-scrollbar {
+            display: none;
+        }
+
+        .skin {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+
+        .btns {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btns>button {
+            height: 30px;
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="text box-1" style="margin-top: 300px;">你</div>
-    <div class="text box-2">在</div>
-    <div class="text box-3">摸</div>
-    <div class="text box-4">鱼</div>
-    <div class="text box-5">？</div>
+    <div class="demo1">
+        <style class="demo1style"></style>
+    </div>
+    <div class="demo2"></div>
+    <div class="btns">
+        <button class="play">播放</button>
+        <button class="pause">暂停</button>
+        <button class="replay">再来一次</button>
+        <button class="slow">慢速</button>
+        <button class="middle">中速</button>
+        <button class="fast">快速</button>
+    </div>
+    <div class="skin">
+        <div class="pikachu">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="mouth">
+                <div class="up">
+                    <div class="lip left"></div>
+                    <div class="lip right"></div>
+                </div>
+                <div class="down">
+                    <div class="tongue"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
 </body>
-
-<style>
-    .text {
-        line-height: 100px;
-        width: 100%;
-        font-size: 100px;
-        text-align: center;
-        height: 100px;
-    }
-
-    .box-1 {
-        animation-name: box1;
-        animation-duration: 3s;
-    }
-
-    .box-2 {
-        animation-name: box2;
-        animation-duration: 3s;
-    }
-
-    .box-3 {
-        animation-name: box3;
-        animation-duration: 3s;
-    }
-
-    .box-4 {
-        animation-name: box4;
-        animation-duration: 3s;
-    }
-
-    .box-5 {
-        animation-name: box5;
-        animation-duration: 3s;
-    }
-
-    @keyframes box1 {
-        from {
-            font-size: 100px;
-        }
-        to {
-            font-size: 1000px;
-        }
-    }
-
-    @keyframes box2 {
-        from {
-            font-size: 100px;
-        }
-        to {
-            font-size: 1000px;
-        }
-    }
-
-    @keyframes box3 {
-        from {
-            font-size: 100px;
-        }
-        to {
-            font-size: 1000px;
-        }
-    }
-
-    @keyframes box4 {
-        from {
-            font-size: 100px;
-        }
-        to {
-            font-size: 1000px;
-        }
-    }
-
-    @keyframes box5 {
-        from {
-            margin: auto;
-            transform: rotate(0deg);
-        }
-
-        20% {
-            font-size: 200px;
-            color: #D9DD6B;
-        }
-
-        30% {
-            font-size: 300px;
-            color: #D9DD6B;
-        }
-
-        40% {
-            font-size: 400px;
-            color: #ECEFA4;
-        }
-
-        50% {
-            font-size: 500px;
-            color: #ECEFA4;
-        }
-
-        60% {
-            font-size: 600px;
-            color: #D54C4C;
-        }
-
-        70% {
-            font-size: 700px;
-            color: #D54C4C;
-        }
-
-        80% {
-            font-size: 800px;
-            color: #8D2828;
-        }
-
-        90% {
-            font-size: 900px;
-            color: #8D2828;
-        }
-
-        to {
-            transform: rotate(360deg);
-            margin: auto;
-        }
-    }
-</style>
 
 </html>
